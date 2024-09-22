@@ -3,10 +3,10 @@ name: frontend_lint
 on:
   pull_request:
     paths:
-      - 'frontend/src/**/*.js'
-      - 'frontend/src/**/*.ts'
-      - 'frontend/src/**/*.tsx'
-      - 'frontend/package.json'
+      - 'frontend/sample_todos/**/*.js'
+      - 'frontend/sample_todos/**/*.ts'
+      - 'frontend/sample_todos/**/*.tsx'
+      - 'frontend/sample_todos/package.json'
 
 jobs:
   eslint:
