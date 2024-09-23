@@ -23,3 +23,5 @@ ng generate component component-name
   - https://github.com/karma-runner/karma-chrome-launcher/issues/62
   - https://qiita.com/YamaDash82/items/f74f413e0e248222d493
   - https://qiita.com/kawakawaryuryu/items/f4f9149179aa5b0c12fe
+- ルーティング追加後のテスト
+  - https://stackoverflow.com/questions/53654341/angular-7-test-nullinjectorerror-no-provider-for-activatedroute
