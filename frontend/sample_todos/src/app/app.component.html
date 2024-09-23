@@ -327,6 +327,11 @@
           </svg>
         </a>
       </div>
+      <div *ngFor="let product of products">
+        <div>商品名: {{ product.name }}</div>
+        <div>価格: {{ product.price }}</div>
+        <div *ngIf="product.description">特徴: {{ product.description }}</div>
+      </div>
     </div>
   </div>
 </main>
