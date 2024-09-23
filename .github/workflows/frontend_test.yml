@@ -21,10 +21,19 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Chromium
+        working-directory: ./frontend/sample_todos
+        run: |
+          apt-get update
+          apt-get upgrade -y
+          apt-get install --no-install-recommends -y chromium
+
       - name: Install dependencies
         working-directory: ./frontend/sample_todos
         run: npm install
 
       - name: Run Jest
         working-directory: ./frontend/sample_todos
-        run: npm run test
+        env:
+          CHROME_BIN: /usr/bin/chromium
+        run: npm run test:ci
