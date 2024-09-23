@@ -24,7 +24,9 @@ jobs:
       - name: Setup Chromium
         working-directory: ./frontend/sample_todos
         run: |
-          apt-get install --no-install-recommends -y chromium
+          sudo apt-get update
+          sudo apt-get upgrade -y
+          sudo apt-get install --no-install-recommends -y chromium
 
       - name: Install dependencies
         working-directory: ./frontend/sample_todos
