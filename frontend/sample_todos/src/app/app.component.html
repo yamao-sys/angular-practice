@@ -331,6 +331,11 @@
         <div>商品名: {{ product.name }}</div>
         <div>価格: {{ product.price }}</div>
         <div *ngIf="product.description">特徴: {{ product.description }}</div>
+        <!-- プロパティバインディング[] プロパティの内容がタグの方に反映される -->
+        <!-- <a [title]="product.name ' detail'">{{ product.name }}</a> -->
+        <app-product-alerts [name]="product.name" (notify)="notify()"></app-product-alerts>
+        <!-- イベントバインディング() タグから内容が反映される -->
+        <button (click)="share()">シェア</button>
       </div>
     </div>
   </div>

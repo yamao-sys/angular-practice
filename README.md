@@ -2,6 +2,16 @@
 
 Angular のキャッチアップ
 
+Udemy(【2024 年最新版】はじめての Angular 超入門。実践で学ぶ本格 Web アプリ開発【TypeScript】)による Angular の基礎インプット
+
+## コマンド類
+
+コンポーネントの作成
+
+```
+ng generate component component-name
+```
+
 ## 参考
 
 - Docker 環境構築
